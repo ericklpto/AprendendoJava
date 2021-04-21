@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+<head>
+	<title>Sistema de Posto de Gasolina</title>
+	<meta charset="utf-8">
+</head>
+	<body>
+		<h1>Calculando Venda de Combustivel</h1>
+		<script>
+			var codigo1 = 3.16;
+			var codigo2 = 4.19;
+			var combustivel = prompt ("Digite 1: Etanol | Digite 2: para Gasolina");
+
+			if (combustivel == "1") {
+					var quantlitro = prompt ("Digite quantidade de litro");
+					document.writeln ("Álcool preço/litro: " + codigo1);
+					var resultetanol = quantlitro * codigo1;
+					document.writeln ("Quantidade de Litro escolhido: " + quantlitro);
+					document.writeln ("Preço Total Etanol R$: "+ resultetanol);
+			} else {
+				alert ("Digitou a informação errada !");
+				if (combustivel == "2") {
+						var quantlitro = prompt ("Digite quantidade de litro");
+						document.writeln ("Gasolina preço/litro: " + codigo2);
+						var resultgaso = quantlitro * codigo2;
+						document.writeln ("Quantidade de Litro escolhido: " + quantlitro);
+						document.writeln ("Preço Total Gasolina R$: "+ resultgaso);
+					} else {
+						alert ("Digitou a informação errada !");
+					}
+			}
+		</script>
+	</body>
+</html>
